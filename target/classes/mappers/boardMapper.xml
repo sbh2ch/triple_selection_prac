@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="triple">
+	<select id="init" resultType="com.son.selectionTest.vo.CountryVO">
+		select name from country order by no asc;
+	</select>
+
+	<!-- 첫번째 셀렉 박스 선택 -->
+	<select id="first" resultType="com.son.selectionTest.vo.CityVO" parameterType="String">
+		select name from city where country = #{country} 
+	</select>
+
+	<!-- 두번째 셀렉 박스 선택 -->
+	<select id="second" resultType="com.son.selectionTest.vo.PeopleVO" parameterType="String">
+		select name from people where city = #{city}
+	</select>
+
+	<!-- 세번째 셀렉 박스 선택 -->
+	<select id="third" resultType="String" parameterType="com.son.selectionTest.vo.PeopleVO">
+		select phone from people where name = #{name} and city = #{city}
+	</select>
+</mapper>
