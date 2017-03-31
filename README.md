@@ -1,7 +1,7 @@
 # triple selection practice
-this practice aims to learn the DB dynamic connection by AJAX(xhr) in JSON formmat 
-I'll make 3 selection boxes
-when you choose the first box, a second box will be listed up.(third's logic is same too)  
+this practice aims to learn the DB dynamic connection by AJAX(xhr) in JSON formmat</br>
+I'll make 3 selection boxes</br>
+when you choose the first box, a second box will be listed up.(third's logic is same too)</br>
 
 ## Tables
 Before you install this test, you need to make the tables.
