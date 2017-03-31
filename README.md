@@ -9,7 +9,7 @@ Before you install this test, you need to make the tables.
 - Country
 
   ```
-    create table country (
+  create table country (
     no int auto_increment not null primary key,
     name varchar(50)
   );
